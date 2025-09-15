@@ -15,3 +15,7 @@ def check_case(text):
     else:
         return "Літери змішані"
 
+def word_to_upper_list(word):
+    if not isinstance(word, str):
+        raise TypeError("Аргумент має бути рядком")
+    return [char.upper() for char in word]
